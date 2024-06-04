@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Neue';
+}
+
+body {
+    background-color: #282828;
+}
+
+#pairFoundText {
+    display: none;
+    padding: 10px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 36px;
+    color: #fff;
+}
+
+#themeSwitch {
+    padding: 10px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 24px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 25px;
+    background-color: rgb(201, 43, 43);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.container h1 {
+    font-size: 64px;
+    color: #fff;
+    animation-name: titleScale;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.game {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.game button {
+    border: none;
+    border-radius: 10%;
+    color: #fff;
+    cursor: pointer;
+    background-color: #160f8f;
+}
+
+.configBtn {
+    padding: 30px;
+    font-size: 48px;
+}
+
+.card {
+    min-width: 100px;
+    min-height: 100px;
+    background-position: center;
+    background-size: contain;
+}
+
+@keyframes titleScale {
+    0% {
+        scale: 1;
+    }
+
+    50% {
+        scale: 1.2;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
