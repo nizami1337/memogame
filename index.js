@@ -36,9 +36,6 @@ function setPairs(pairCount) {
         imagedict[arr.indexOf(i)] = i
         imagedict[arr.lastIndexOf(i)] = i
     }
-    console.log(arr)
-    console.log(pairs)
-    console.log(imagedict)
     
     // for (let i=0;i<pairCount;i++) {
     //     let random = 0
